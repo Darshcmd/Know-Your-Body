@@ -1,0 +1,35 @@
+.option-card__container {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 4rem 3.5rem;
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.option-card__name {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.option-card__container:hover {
+    cursor: pointer;
+    /* Firefox */
+    -moz-transition: all .15s ease-in;
+    /* WebKit */
+    -webkit-transition: all .15s ease-in;
+    /* Opera */
+    -o-transition: all .15s ease-in;
+    /* Standard */
+    transition: all .15s ease-in;
+
+    background-color: var(--secondary-theme);
+}
+.option-card__icon {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}

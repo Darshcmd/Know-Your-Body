@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Dosis&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    background-color: #f0f0f0;
+    background-image: radial-gradient(#d0d0d0 2px, #f0f0f0 2px);
+    background-size: 20px 20px; /* Adjusted the background size to make the dots bigger */
+    animation: moveBackground 3s linear infinite;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -20px 0; 
+    }
+}
+
+
+#root {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Bangers', cursive;
+    font-family: 'Dosis', sans-serif;
+
+    --secondary-theme: #3FD0C9;
+    --main-theme: #32CD32;
+
+    /* Steer brand palette (used selectively) */
+    --steer-cream: #F5EBDF;
+    --steer-rust: #C04E2A;
+    --steer-maroon: #661414;
+    --steer-ink: #351D1D;
+    --steer-clay: #B58777;
+    --steer-blush: #E6CBBD;
+}
+
+.react-flow__edge-path {
+    stroke-width: 4 !important;
+    stroke: black !important;
+}

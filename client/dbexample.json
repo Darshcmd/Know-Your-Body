@@ -1,0 +1,253 @@
+[
+    {
+        "questionText": "What do you understand by the term 'general asthma'?",
+        "questionType": "General",
+        "openEnded": true,
+        "saveToProfile": false,
+        "options": [],
+        "correctOptions": [],
+        "summary": "General asthma refers to the common symptoms and triggers of asthma, which can include wheezing, shortness of breath, and coughing. It is generally managed through a combination of medications and avoiding known triggers."
+    },
+    {
+        "questionText": "Which of the following is a common symptom of general asthma?",
+        "questionType": "General",
+        "openEnded": false,
+        "saveToProfile": false,
+        "options": [
+            "Frequent sneezing",
+            "Wheezing",
+            "Dry skin",
+            "Headache"
+        ],
+        "correctOptions": [
+            "Wheezing"
+        ],
+        "summary": "Wheezing is a common symptom of general asthma, characterized by a high-pitched whistling sound during breathing."
+    },
+    {
+        "questionText": "What is the primary method of managing general asthma?",
+        "questionType": "General",
+        "openEnded": false,
+        "saveToProfile": false,
+        "options": [
+            "Physical therapy",
+            "Medications and avoiding triggers",
+            "Surgery",
+            "Acupuncture"
+        ],
+        "correctOptions": [
+            "Medications and avoiding triggers"
+        ],
+        "summary": "The primary method of managing general asthma is through medications and avoiding triggers that can cause asthma attacks."
+    },
+    {
+        "questionText": "What role does the environment play in general asthma?",
+        "questionType": "General",
+        "openEnded": false,
+        "saveToProfile": false,
+        "options": [
+            "No role",
+            "Can be a trigger for asthma symptoms",
+            "Can cure asthma",
+            "Helps in building immunity against asthma"
+        ],
+        "correctOptions": [
+            "Can be a trigger for asthma symptoms"
+        ],
+        "summary": "The environment can play a significant role in general asthma as it can contain triggers such as dust, pollen, and smoke that can cause asthma symptoms."
+    },
+    {
+        "questionText": "Can general asthma be cured?",
+        "questionType": "General",
+        "openEnded": false,
+        "saveToProfile": false,
+        "options": [
+            "Yes",
+            "No",
+            "Only with surgery",
+            "Only with herbal treatments"
+        ],
+        "correctOptions": [
+            "No"
+        ],
+        "summary": "As of now, there is no cure for general asthma. However, it can be effectively managed with the right treatment and lifestyle adjustments."
+    },
+    {
+        "questionText": "How has allergic asthma affected your daily activities?",
+        "questionType": "Allergic",
+        "openEnded": true,
+        "saveToProfile": false,
+        "options": [],
+        "correctOptions": [],
+        "summary": "Allergic asthma can affect daily activities in various ways, including limiting physical activity due to breathlessness, causing disruptions due to coughing, and requiring time for medication and management of symptoms."
+    },
+    {
+        "questionText": "Which of the following is a common trigger for allergic asthma?",
+        "questionType": "Allergic",
+        "openEnded": false,
+        "saveToProfile": false,
+        "options": [
+            "Pollen",
+            "Cold weather",
+            "Stress",
+            "All of the above"
+        ],
+        "correctOptions": [
+            "Pollen"
+        ],
+        "summary": "Pollen is a common trigger for allergic asthma, although other factors like cold weather and stress can also trigger symptoms."
+    },
+    {
+        "questionText": "What is the main difference between allergic and non-allergic asthma?",
+        "questionType": "Allergic",
+        "openEnded": false,
+        "saveToProfile": false,
+        "options": [
+            "The symptoms they present",
+            "The triggers that cause them",
+            "The treatments available for them",
+            "There is no difference"
+        ],
+        "correctOptions": [
+            "The triggers that cause them"
+        ],
+        "summary": "The main difference between allergic and non-allergic asthma is the triggers that cause them. Allergic asthma is triggered by allergens such as pollen, while non-allergic asthma can be triggered by factors such as stress or cold air."
+    },
+    {
+        "questionText": "How is allergic asthma diagnosed?",
+        "questionType": "Allergic",
+        "openEnded": false,
+        "saveToProfile": false,
+        "options": [
+            "Blood test",
+            "Skin test",
+            "Spirometry",
+            "All of the above"
+        ],
+        "correctOptions": [
+            "All of the above"
+        ],
+        "summary": "Allergic asthma can be diagnosed using a variety of tests including blood tests to check for the presence of allergens, skin tests to identify specific allergens, and spirometry to assess lung function."
+    },
+    {
+        "questionText": "What is a common treatment for allergic asthma?",
+        "questionType": "Allergic",
+        "openEnded": false,
+        "saveToProfile": false,
+        "options": [
+            "Antihistamines",
+            "Bronchodilators",
+            "Inhaled corticosteroids",
+            "All of the above"
+        ],
+        "correctOptions": [
+            "All of the above"
+        ],
+        "summary": "Common treatments for allergic asthma include antihistamines to control allergic reactions, bronchodilators to open the airways, and inhaled corticosteroids to reduce inflammation in the lungs."
+    },
+    {
+        "questionText": "Can you share your experience with non-allergic asthma triggers?",
+        "questionType": "Non-Allergic",
+        "openEnded": true,
+        "saveToProfile": false,
+        "options": [],
+        "correctOptions": [],
+        "summary": "Non-allergic asthma triggers can vary greatly between individuals. They might include irritants like smoke, strong odors, or changes in weather. Understanding one's personal triggers is crucial in managing non-allergic asthma."
+    },
+    {
+        "questionText": "Which of the following can be a trigger for non-allergic asthma?",
+        "questionType": "Non-Allergic",
+        "openEnded": false,
+        "saveToProfile": false,
+        "options": [
+            "Exercise",
+            "Cold air",
+            "Strong odors",
+            "All of the above"
+        ],
+        "correctOptions": [
+            "All of the above"
+        ],
+        "summary": "Non-allergic asthma can be triggered by a variety of factors including exercise, exposure to cold air, and strong odors."
+    },
+    {
+    "questionText": "What is a common treatment approach for non-allergic asthma?",
+    "questionType": "Non-Allergic",
+    "openEnded": false,
+    "saveToProfile": false,
+    "options": [
+        "Avoiding triggers",
+        "Inhaled corticosteroids",
+        "Bronchodilators",
+        "All of the above"
+    ],
+    "correctOptions": [
+        "All of the above"
+    ],
+    "summary": "The common treatment approach for non-allergic asthma includes avoiding triggers and using medications such as inhaled corticosteroids and bronchodilators to manage symptoms."
+},
+{
+    "questionText": "How is non-allergic asthma different from allergic asthma?",
+    "questionType": "Non-Allergic",
+    "openEnded": false,
+    "saveToProfile": false,
+    "options": [
+        "Non-allergic asthma is not affected by allergens",
+        "Non-allergic asthma cannot be treated",
+        "Non-allergic asthma is a mild form of asthma",
+        "Non-allergic asthma is a psychological condition"
+    ],
+    "correctOptions": [
+        "Non-allergic asthma is not affected by allergens"
+    ],
+    "summary": "Non-allergic asthma is different from allergic asthma in that it is not triggered by allergens such as pollen or dust mites. It can be triggered by other factors such as cold air, smoke, or exercise."
+},
+{
+    "questionText": "What kind of doctor should you see if you suspect you have non-allergic asthma?",
+    "questionType": "Non-Allergic",
+    "openEnded": false,
+    "saveToProfile": false,
+    "options": [
+        "Dermatologist",
+        "Pulmonologist",
+        "Cardiologist",
+        "Endocrinologist"
+    ],
+    "correctOptions": [
+        "Pulmonologist"
+    ],
+    "summary": "If you suspect you have non-allergic asthma, it is advisable to see a pulmonologist, a doctor who specializes in respiratory issues, including asthma."
+},
+{
+    "questionText": "Can non-allergic asthma symptoms be triggered by stress?",
+    "questionType": "Non-Allergic",
+    "openEnded": false,
+    "saveToProfile": false,
+    "options": [
+        "Yes",
+        "No",
+        "Only in children",
+        "Only in elderly people"
+    ],
+    "correctOptions": [
+        "Yes"
+    ],
+    "summary": "Yes, stress can be a trigger for non-allergic asthma symptoms. It is important to manage stress to help control asthma symptoms."
+},
+{
+    "questionText": "What role does weather play in non-allergic asthma?",
+    "questionType": "Non-Allergic",
+    "openEnded": false,
+    "saveToProfile": false,
+    "options": [
+        "No role",
+        "Can trigger asthma symptoms",
+        "Can cure asthma",
+        "Helps in building immunity against asthma"
+    ],
+    "correctOptions": [
+        "Can trigger asthma symptoms"
+    ],
+    "summary": "Weather can play a role in non-allergic asthma as changes in weather, especially cold air, can trigger asthma symptoms."
+}
+]
