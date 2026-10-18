@@ -50,6 +50,30 @@ The core experience follows a simple learning flow:
 
 I designed this flow to make learning feel progressive rather than overwhelming.
 
+## Interaction tracking and device coverage
+
+This table documents what is tracked (or verified) for each key flow, where it is intended to work, how completion is detected, what triggers it, what value is recorded, and where the user goes next.
+
+| Flow / Screen | Target Device / Browser | Completion Status | Trigger | Value | Next Step |
+|---|---|---|---|---|---|
+| Welcome `/` - Start learning | Mobile-first (iOS Safari, Android Chrome) + Desktop (Chrome, Safari, Firefox, Edge) | ✅ Implemented | Click `Start learning` (`Welcome.tsx` → `navigate('/topics')`) | No value stored - entry navigation only | Go to `/topics` |
+| Topic selection `/topics` - Choose a topic | Mobile-first + Desktop (same as above, HashRouter build works on Netlify + GitHub Pages `/docs`) | ✅ Implemented | Click topic card (`TopicSelection.tsx` → `nav('/learn/:pathId')`) for `weight-regain`, `body-composition`, `appetite-glp1` | Selected `pathId` in route param | Go to `/learn/:pathId` (`LessonFlow.tsx`) |
+| Topic selection `/topics` - View scoreboard | Mobile-first + Desktop | ✅ Implemented | Click `View global scoreboard` → `nav('/scoreboard')` | No value stored | Go to `/scoreboard` |
+| Learning path `/learn/:pathId` - Question node | Mobile-first + Desktop | ✅ Implemented | Select answer option (`handleSelect(id)` in `LessonFlow.tsx`) | `recordCorrect(path.id, node.id)` → `localStorage['kyb.scoreboard.v1']` as `{ pathId: [questionId] }` only when `classification === 'correct'`; otherwise feedback only (`correct` / `partially right` / `not quite`) | Show feedback + explanation + `View source →`, then `Continue` / `Check answer` |
+| Learning path `/learn/:pathId` - Lesson node | Mobile-first + Desktop | ✅ Implemented | Click `Continue` / `Finish` (`handleContinue()` → `resolveNextId()` or sequential `nodeIndex + 1`) | No score stored - `takeaway` + optional `sourceId` collected later via `buildSummary(pathId)` | Advance to next node or completion screen if `isLast` |
+| Completion screen (`kind: completion`) | Mobile-first + Desktop | ✅ Implemented | Reach last node (`wr-complete`, `bc-complete`, `ag-complete`) | `buildSummary(pathId)` → `takeaways[]` + `sources[]` (title, author/org, year, URL/DOI, locator) rendered on screen | `View scoreboard` → `/scoreboard`, `Explore another topic` → `/topics`, `Restart this topic` → `nodeIndex 0` |
+| Global scoreboard `/scoreboard` | Mobile-first + Desktop | ✅ Implemented | Open route; reads `getTotalCorrect()` / `getTotalQuestions()` + per-path `getPathCorrect()` / `getPathTotalQuestions()` | Displayed value `totalCorrect / totalQuestions` + percent + per-path bars; device-only, no backend | `Choose a topic` → `/topics`, `Back to start` → `/`, `Reset score` → `resetScoreboard()` clears `kyb.scoreboard.v1` |
+| Legacy gated experience `/home`, `/home/path/:condition`, `/home/lesson/:id`, `/home/research` (Clerk) | Desktop + Mobile (requires `VITE_REACT_APP_CLERK_PUBLISHABLE_KEY`; otherwise redirects to sign-in) | ⚠️ Legacy / partially maintained | `SignedIn` → `HomeLayout`; node click (`PathComponent`) → `navigate('../../lesson/:id')` or `research`; `LessonComponent checkAnswer()` | `localStorage['lessons-completed']` (`;`-separated ids) + confetti on `isCompleted`; question bank from `dbexample.json` | Lesson completion → `/home`; resource node `5` → `research` links (Pitt+Me, ClinicalTrials.gov, ResearchMatch) |
+| Auth `/sign-in`, `/sign-up` | Mobile-first + Desktop | ✅ Implemented (only when Clerk key present) | Clerk `<SignIn routing='path' path='/sign-in' redirectUrl='/home' />` | Clerk session (external, not tracked in README table values) | Redirect to `/home` |
+| Fallback `*` - Not found | Mobile-first + Desktop | ✅ Implemented | Unknown route → `<ErrorPage errorCode={404} />` (`https://http.cat/404`) | No value stored | User navigates back via browser or app links |
+
+Notes:
+
+- Scores are stored in `localStorage` on the device only (`kyb.scoreboard.v1`). No backend, no account, and no sensitive personal health data is collected.
+- The public experience (`/`, `/topics`, `/learn/:pathId`, `/scoreboard`) runs without Clerk or API keys. Clerk is only used for the legacy `/home` experience when a publishable key is configured.
+- Routing uses `HashRouter` with Vite `base: './'` so deep links and refreshes work on static hosts (Netlify via `netlify.toml`, GitHub Pages via `/docs` branch deploy).
+- Responsive layout is mobile-first with Tailwind (`p-4 md:p-8`, `max-w-xl` containers) and is intended to be verified on iOS Safari, Android Chrome, and desktop Chrome/Safari/Firefox/Edge.
+
 ## Design approach
 
 I wanted the interface to feel warm, clear, and approachable rather than clinical or intimidating.
