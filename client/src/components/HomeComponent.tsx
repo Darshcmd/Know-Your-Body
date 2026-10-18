@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import OptionCard from "./OptionCard";
 
 import asthma from "../assets/inhaler.png";
@@ -14,17 +13,6 @@ const options = [
 ];
 
 const HomeComponent = () => {
-    useEffect(() => {
-        const getData = async () => {
-            const req = await fetch("http://localhost:3000/questions", {
-                method: "GET",
-            })
-                .then((res) => res.json())
-                .then((data) => console.log(data));
-            console.log(req);
-        };
-        getData();
-    }, []);
     return (
         <div className="flex flex-col justify-center h-fit">
             <span className="text-center text-3xl w-full">Click a card to start learning about common illnesses!</span>

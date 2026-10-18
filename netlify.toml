@@ -1,0 +1,14 @@
+[build]
+  base = "client"
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Keeps direct links and refreshes working if the router is ever changed from
+# hash-based routing to path-based routing.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

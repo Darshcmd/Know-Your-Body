@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import LessonHeader from "./LessonHeader";
 import Confetti from "react-confetti";
+import questionBank from "../../dbexample.json";
 
 const questionTypes = ["General", "Allergic", "Non-Allergic", "Occupational", "Exercise-Induced"];
 
@@ -23,22 +24,14 @@ const LessonComponent = () => {
 
     const nav = useNavigate();
 
-    // When the page loads, fetch the questions
+    // Keep the legacy lesson flow self-contained so it works on static hosts
+    // such as Netlify and GitHub Pages without a localhost API server.
     useEffect(() => {
-        const getQuestions = async () => {
-            await fetch(`http://localhost:3000/questions`)
-                .then((res) => res.json())
-                .then((data) => {
-                    console.log(data);
-                    setQuestions(
-                        data.filter(
-                            (item) => item.questionType === questionTypes[id]
-                        )
-                    );
-                });
-        };
-
-        getQuestions();
+        setQuestions(
+            questionBank.filter(
+                (item) => item.questionType === questionTypes[id]
+            )
+        );
     }, [id]);
 
     const checkAnswer = () => {
