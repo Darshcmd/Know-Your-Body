@@ -42,7 +42,7 @@ I see this as an important part of making health literacy more accessible.
 
 The core experience follows a simple learning flow:
 
-1. **Explore** — Start with a health topic or concern.
+1. **Explore** - Start with a health topic or concern.
 2. **Interact** — Move through questions and guided learning paths.
 3. **Understand** — Receive explanations and feedback that put the information into context.
 4. **Reflect** — Review the key takeaways through a personalized learning summary.
