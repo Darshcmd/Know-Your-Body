@@ -4,7 +4,7 @@
 
 I built **Know Your Body** to make learning about metabolic health feel less like reading a medical textbook and more like exploring something that directly affects our everyday lives.
 
-Health information can be difficult to understand, especially when it is filled with unfamiliar terminology, complicated explanations, and conflicting advice. I wanted to create an experience that breaks these concepts down into something approachable, interactive, and useful — not just for adults, but also for kids and young learners who are beginning to understand their bodies.
+Health information can be difficult to understand, especially when it is filled with unfamiliar terminology, complicated explanations, and conflicting advice. I wanted to create an experience that breaks these concepts down into something approachable, interactive, and useful - not just for adults, but also for kids and young learners who are beginning to understand their bodies.
 
 The goal is simple: **make health education easier to access, easier to understand, and easier to remember.**
 
@@ -43,10 +43,10 @@ I see this as an important part of making health literacy more accessible.
 The core experience follows a simple learning flow:
 
 1. **Explore** - Start with a health topic or concern.
-2. **Interact** — Move through questions and guided learning paths.
-3. **Understand** — Receive explanations and feedback that put the information into context.
-4. **Reflect** — Review the key takeaways through a personalized learning summary.
-5. **Continue learning** — Use the experience to identify topics worth exploring further.
+2. **Interact** - Move through questions and guided learning paths.
+3. **Understand** - Receive explanations and feedback that put the information into context.
+4. **Reflect** - Review the key takeaways through a personalized learning summary.
+5. **Continue learning** - Use the experience to identify topics worth exploring further.
 
 I designed this flow to make learning feel progressive rather than overwhelming.
 
@@ -68,10 +68,10 @@ A few principles guided the design:
 
 I built the application using:
 
-- **React** — Component-based user interface.
-- **TypeScript** — Type safety and more maintainable code.
-- **Vite** — Development server and build tooling.
-- **Local JSON data** — Structured content for the interactive learning experience.
+- **React** - Component-based user interface.
+- **TypeScript** - Type safety and more maintainable code.
+- **Vite** - Development server and build tooling.
+- **Local JSON data** - Structured content for the interactive learning experience.
 
 The application is designed to run without requiring users to create an account or configure a database.
 
@@ -139,5 +139,5 @@ For me, the challenge is not simply putting information online. It is making tha
 - [GitHub](https://github.com/Darshcmd)
 - [Portfolio](https://darsh.is-a.dev)
 
-Built as part of the **Steer Hackathon — Problem Statement 1**.
+Built as part of the **Steer Hackathon - Problem Statement 1**.
 
